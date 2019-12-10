@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/* HEADER */
+.header {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    width: 100px;
+}
+/* HEADER */
+
+/* navigation */
+.navigation {
+    width: 100%;
+    height: fit-content;  
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
+    margin-bottom: 1px;
+}
+
+.navigation nav ul {
+    display: flex;
+}
+
+.navigation nav ul li {
+    position: relative;
+}
+
+.navigation nav ul li:hover ul {
+    display: block;
+}
+
+.navigation nav ul li a {
+    display: flex;
+    color: #111111;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 30px;
+}
+
+.navigation nav ul li a:hover {
+    border-bottom: 5px solid #111111;
+    transition: 0.4s;
+}
+
+.navigation nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+    z-index: 1;
+}
+
+.navigation nav ul li ul li {
+    width: 100%;
+}
+
+/* navigation */
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .footer-navigation nav ul li {
+    list-style: disc;
+}
+
+.footer .footer-navigation nav ul li a {
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer .footer-navigation nav ul li ul li {
+    list-style: circle;
+    margin-left: 30px;
+}
+
+.footer .POwithV-logo {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .POwithV-logo #logo img {
+    width: 50px;
+}
+
+.footer .POwithV-logo #copyright {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Calibri Light';
+}
+
+.footer .contact {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .contact img {
+    width: 35px;
+}
+
+.footer .contact .whatsapp {
+    margin-top: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .contact .whatsapp #whatsapp-number {
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 5px;
+}
+
+.footer .copyright {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Calibri Light';
+    display: none;
+}
+
+/* FOOTER */
+
+@media only screen and (max-width: 600px) { 
+
+    /* FOOTER */
+
+    .footer {
+        position: relative;
+    }
+
+    .footer .POwithV-logo {
+        display: none;
+    }
+
+    .footer .copyright {
+        display: contents;
+    }
+
+    .footer .copyright h5 {
+        width: fit-content;
+        position: absolute;
+        bottom: 6px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    /* FOOTER */
+}
+
+@media only screen and (max-width: 710px) {
+    /* navigation */
+
+    .navigation nav {
+        width: 100%;
+    }
+
+    .navigation nav ul {
+        flex-direction: column;
+    }
+
+    .navigation nav ul li a {
+        justify-content: center;
+    }
+
+    .navigation nav ul li ul {
+        width: 100%;
+    }
+
+    .navigation nav ul li ul li a {
+        color: #ffffff;
+        background-color: #1f1f1f;
+    }
+
+    /* navigation */
+}

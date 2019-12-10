@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="contents.css">
+    <script src="script.js"></script>
+    <title>Testimonial</title>
+</head>
+
+<body>
+    <div class="header">
+        <a href="home.html">
+            <img src="POwithV logo/POwithV-Logo.jpg" alt="POwithV LOGO">
+        </a>
+    </div>
+
+    <div class="navigation">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="#">Products</a>
+                    <ul>
+                        <li><a href="foods.html">Foods</a></li>
+                        <li><a href="medicines.html">Medicines</a></li>
+                    </ul>
+                </li>
+                <li><a href="how-to-order.html">How to Order</a></li>
+                <li><a href="testimonial.html">Testimonial</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="testimonial-main">
+        <div class="title">
+            <p>How do you think about our Products and Services?</p>
+        </div>
+        <form action="home.html">
+            <div class="text-box">
+                <input type="text" placeholder="Full Name" name="name" id="name">
+            </div>
+            <div class="text-box">
+                <input type="text" placeholder="E-mail" name="email" id="email" onkeypress="checkSpace(event)">
+            </div>
+            <div class="select">
+                <span>Rate our product</span>
+                <select name="hobi" id="rate">
+                    <option id="empty" value=" "></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="textarea">
+                <textarea rows="7" placeholder="Comments" id="comments"></textarea>
+            </div>
+            <div class="textarea">
+                <textarea rows="7" placeholder="Feedbacks" id="feedbacks"></textarea>
+            </div>
+            <div class="radio-btn">
+                <span>Publish Confirmation</span>
+                <input type="radio" value="yes" name="confirmation" checked>No
+                <input id="yes" type="radio" value="no" name="confirmation" checked>Yes
+            </div>
+            <div class="confirm">
+                <button onclick="validation()">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="footer-navigation">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="#">Products</a>
+                        <ul>
+                            <li><a href="foods.html">Foods</a></li>
+                            <li><a href="medicines.html">Medicines</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="how-to-order.html">How to Order</a></li>
+                    <li><a href="testimonial.html">Testimonial</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="POwithV-logo">
+            <a href="home.html" id="logo">
+                <img src="POwithV logo/POwithV-Logo.jpg" alt="POwithV-Logo">
+            </a>
+            <h5 id="copyright">© 2019 powithv.com</h5>
+        </div>
+
+        <div class="contact">
+            <a href="https://instagram.com/vick_djk?igshid=ikyqezasrqs2" target="_blank">
+                <img src="logos/instagram.png" alt="INSTAGRAM">
+            </a>
+            <div class="whatsapp">
+                <img src="logos/whatsapp.png" alt="WHATSAPP">
+                <p id="whatsapp-number">+6281384893193</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <h5>© 2019 powithv.com</h5>
+        </div>
+    </div>
+</body>
+
+</html>
